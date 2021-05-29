@@ -4,7 +4,7 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Say hi to - ${{github.actor}}
     steps:
       - name: Hello world action step
         id: hello
